@@ -6,7 +6,7 @@ The first algorithm **periodNaive** has O(n^2) complessity.
 The second algorithm **periodSmart** has Theta(n) complessity.
 
 ## Trees
-The purpose is to implement different type of trees (**AVL,BST,RBT**) and calculate the time required to run the operations of research and insert using nodes randomly created  
+The purpose is to implement differents type of trees (**AVL,BST,RBT**) and calculate the time required to run the operations of research and insert using nodes randomly created  
 
 ##### Note
 The comments are in Italian
