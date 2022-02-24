@@ -5,4 +5,4 @@ The purpose is to calculate the fractional period of a string with two differet 
 The first algorithm **periodNaive** has O(n^2) complessity.
 The second algorithm **periodSMart** has Theta(n) complessit.
 ##### Note
-The commentsare in the code Italian.
+The comments are in the code Italian.
