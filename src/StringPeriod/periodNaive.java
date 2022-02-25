@@ -1,7 +1,9 @@
+package StringPeriod;
+
 import java.util.*;
 
 
-public class periodoNaive {
+public class periodNaive {
 	
     private interface GenerationString{
         String generaStringa(int n, int len);
@@ -63,8 +65,8 @@ public class periodoNaive {
      * Stima i tempi di un algoritmo per il calcolo del periodo minimo di una stringa
      * @param min minimo valore da cui deve partire la stima
      * @param max massimo valore a cui deve arrivare la stima
-     * @param gen algoritmo di generazione delle stringhe
-     * @param alg algoritmo Period da analizzare
+     * @param genera algoritmo di generazione delle stringhe
+     * @param algoritmo algoritmo Period da analizzare
      */
     private static void misuraTempi(int min, int max, GenerationString genera, PeriodAlgorithm algoritmo){
 
@@ -119,7 +121,7 @@ public class periodoNaive {
     public static void main(String args[]){
     	
     	GenerationString genera = (int a, int b) -> stringGenerator(a, b);
-    	PeriodAlgorithm algoritmo = (String s) -> periodNaive(s);;
+    	PeriodAlgorithm algoritmo = (String s) -> periodNaive(s);
     	
         System.out.println("\nlunghezza\ttempoMedio\n"); 
         misuraTempi(1000, 500000, genera, algoritmo); 

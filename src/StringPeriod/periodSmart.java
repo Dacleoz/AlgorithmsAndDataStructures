@@ -1,9 +1,11 @@
+package StringPeriod;
+
 import java.util.Random;
 
 import java.util.*;
 
 
-public class periodoSmart {
+public class periodSmart {
 	
 	
     private interface GenerationString{
@@ -88,8 +90,8 @@ public class periodoSmart {
      * Stima i tempi di un algoritmo per il calcolo del periodo minimo di una stringa
      * @param min minimo valore da cui deve partire la stima
      * @param max massimo valore a cui deve arrivare la stima
-     * @param gen algoritmo di generazione delle stringhe
-     * @param alg algoritmo Period da analizzare
+     * @param genera algoritmo di generazione delle stringhe
+     * @param algoritmo algoritmo Period da analizzare
      */
     private static void misuraTempi(int min, int max, GenerationString genera, PeriodAlgorithm algoritmo){
 
@@ -144,7 +146,7 @@ public class periodoSmart {
     public static void main(String args[]){
     	
     	GenerationString genera = (int a, int b) -> stringGenerator(a, b);
-    	PeriodAlgorithm algoritmo = (String s) -> periodSmart(s);;
+    	PeriodAlgorithm algoritmo = (String s) -> periodSmart(s);
     	
         System.out.println("\nlunghezza\ttempoMedio\n"); 
         misuraTempi(1000, 500000, genera, algoritmo); 
